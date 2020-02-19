@@ -51,10 +51,5 @@ enum Direction: String {
                return .north
            }
     }
-
-    func move(forward: Direction, from: (Int, Int)) -> (Int, Int) {
-        let transform = forward.vector(from: forward)
-        return (transform.0 + from.0, transform.1 + from.1)
-    }
 }
 
