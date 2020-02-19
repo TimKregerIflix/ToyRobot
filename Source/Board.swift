@@ -6,4 +6,9 @@
 //  Copyright © 2020 audioreactive. All rights reserved.
 //
 
-import Foundation
+struct Board {
+    let xmin: Int
+    let ymin: Int
+    let xmax: Int
+    let ymax: Int
+}
