@@ -8,6 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		8EE83DBB23FCCF94006D7EE2 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE83DBA23FCCF94006D7EE2 /* main.swift */; };
+		8EE83DE123FCD78E006D7EE2 /* ToyRobotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE83DE023FCD78E006D7EE2 /* ToyRobotTests.swift */; };
+		8EE83DE823FCD9B2006D7EE2 /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE83DE723FCD9B2006D7EE2 /* Direction.swift */; };
+		8EE83DEA23FCD9F7006D7EE2 /* DirectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE83DE923FCD9F7006D7EE2 /* DirectionTests.swift */; };
+		8EE83DEC23FCDA3E006D7EE2 /* Robot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE83DEB23FCDA3E006D7EE2 /* Robot.swift */; };
+		8EE83DEE23FCDA53006D7EE2 /* RobotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE83DED23FCDA53006D7EE2 /* RobotTests.swift */; };
+		8EE83DF023FCDA9F006D7EE2 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE83DEF23FCDA9F006D7EE2 /* Board.swift */; };
+		8EE83DF223FCDAB5006D7EE2 /* BoardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE83DF123FCDAB5006D7EE2 /* BoardTests.swift */; };
+		8EE83DF523FCDC81006D7EE2 /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE83DE723FCD9B2006D7EE2 /* Direction.swift */; };
+		8EE83DF623FCDC81006D7EE2 /* Robot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE83DEB23FCDA3E006D7EE2 /* Robot.swift */; };
+		8EE83DF723FCDC81006D7EE2 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE83DEF23FCDA9F006D7EE2 /* Board.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,10 +35,26 @@
 /* Begin PBXFileReference section */
 		8EE83DB723FCCF94006D7EE2 /* ToyRobot */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ToyRobot; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EE83DBA23FCCF94006D7EE2 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		8EE83DDE23FCD78E006D7EE2 /* ToyRobotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToyRobotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EE83DE023FCD78E006D7EE2 /* ToyRobotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToyRobotTests.swift; sourceTree = "<group>"; };
+		8EE83DE223FCD78E006D7EE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8EE83DE723FCD9B2006D7EE2 /* Direction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Direction.swift; sourceTree = "<group>"; };
+		8EE83DE923FCD9F7006D7EE2 /* DirectionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectionTests.swift; sourceTree = "<group>"; };
+		8EE83DEB23FCDA3E006D7EE2 /* Robot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Robot.swift; sourceTree = "<group>"; };
+		8EE83DED23FCDA53006D7EE2 /* RobotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RobotTests.swift; sourceTree = "<group>"; };
+		8EE83DEF23FCDA9F006D7EE2 /* Board.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
+		8EE83DF123FCDAB5006D7EE2 /* BoardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		8EE83DB423FCCF94006D7EE2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EE83DDB23FCD78E006D7EE2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,7 +67,9 @@
 		8EE83DAE23FCCF94006D7EE2 = {
 			isa = PBXGroup;
 			children = (
+				8EE83DE623FCD94C006D7EE2 /* Source */,
 				8EE83DB923FCCF94006D7EE2 /* ToyRobot */,
+				8EE83DDF23FCD78E006D7EE2 /* ToyRobotTests */,
 				8EE83DB823FCCF94006D7EE2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				8EE83DB723FCCF94006D7EE2 /* ToyRobot */,
+				8EE83DDE23FCD78E006D7EE2 /* ToyRobotTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,6 +89,28 @@
 				8EE83DBA23FCCF94006D7EE2 /* main.swift */,
 			);
 			path = ToyRobot;
+			sourceTree = "<group>";
+		};
+		8EE83DDF23FCD78E006D7EE2 /* ToyRobotTests */ = {
+			isa = PBXGroup;
+			children = (
+				8EE83DE023FCD78E006D7EE2 /* ToyRobotTests.swift */,
+				8EE83DE223FCD78E006D7EE2 /* Info.plist */,
+				8EE83DE923FCD9F7006D7EE2 /* DirectionTests.swift */,
+				8EE83DED23FCDA53006D7EE2 /* RobotTests.swift */,
+				8EE83DF123FCDAB5006D7EE2 /* BoardTests.swift */,
+			);
+			path = ToyRobotTests;
+			sourceTree = "<group>";
+		};
+		8EE83DE623FCD94C006D7EE2 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				8EE83DE723FCD9B2006D7EE2 /* Direction.swift */,
+				8EE83DEB23FCDA3E006D7EE2 /* Robot.swift */,
+				8EE83DEF23FCDA9F006D7EE2 /* Board.swift */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +133,23 @@
 			productReference = 8EE83DB723FCCF94006D7EE2 /* ToyRobot */;
 			productType = "com.apple.product-type.tool";
 		};
+		8EE83DDD23FCD78E006D7EE2 /* ToyRobotTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8EE83DE323FCD78E006D7EE2 /* Build configuration list for PBXNativeTarget "ToyRobotTests" */;
+			buildPhases = (
+				8EE83DDA23FCD78E006D7EE2 /* Sources */,
+				8EE83DDB23FCD78E006D7EE2 /* Frameworks */,
+				8EE83DDC23FCD78E006D7EE2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ToyRobotTests;
+			productName = ToyRobotTests;
+			productReference = 8EE83DDE23FCD78E006D7EE2 /* ToyRobotTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -93,6 +161,9 @@
 				ORGANIZATIONNAME = audioreactive;
 				TargetAttributes = {
 					8EE83DB623FCCF94006D7EE2 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					8EE83DDD23FCD78E006D7EE2 = {
 						CreatedOnToolsVersion = 11.3.1;
 					};
 				};
@@ -111,9 +182,20 @@
 			projectRoot = "";
 			targets = (
 				8EE83DB623FCCF94006D7EE2 /* ToyRobot */,
+				8EE83DDD23FCD78E006D7EE2 /* ToyRobotTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8EE83DDC23FCD78E006D7EE2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8EE83DB323FCCF94006D7EE2 /* Sources */ = {
@@ -121,6 +203,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				8EE83DBB23FCCF94006D7EE2 /* main.swift in Sources */,
+				8EE83DEC23FCDA3E006D7EE2 /* Robot.swift in Sources */,
+				8EE83DF023FCDA9F006D7EE2 /* Board.swift in Sources */,
+				8EE83DE823FCD9B2006D7EE2 /* Direction.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EE83DDA23FCD78E006D7EE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EE83DE123FCD78E006D7EE2 /* ToyRobotTests.swift in Sources */,
+				8EE83DEE23FCDA53006D7EE2 /* RobotTests.swift in Sources */,
+				8EE83DF223FCDAB5006D7EE2 /* BoardTests.swift in Sources */,
+				8EE83DF523FCDC81006D7EE2 /* Direction.swift in Sources */,
+				8EE83DF723FCDC81006D7EE2 /* Board.swift in Sources */,
+				8EE83DF623FCDC81006D7EE2 /* Robot.swift in Sources */,
+				8EE83DEA23FCD9F7006D7EE2 /* DirectionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +361,44 @@
 			};
 			name = Release;
 		};
+		8EE83DE423FCD78E006D7EE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 3C9G92NBVL;
+				INFOPLIST_FILE = ToyRobotTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.audioreactive.ToyRobotTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		8EE83DE523FCD78E006D7EE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 3C9G92NBVL;
+				INFOPLIST_FILE = ToyRobotTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.audioreactive.ToyRobotTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -279,6 +416,15 @@
 			buildConfigurations = (
 				8EE83DBF23FCCF94006D7EE2 /* Debug */,
 				8EE83DC023FCCF94006D7EE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8EE83DE323FCD78E006D7EE2 /* Build configuration list for PBXNativeTarget "ToyRobotTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8EE83DE423FCD78E006D7EE2 /* Debug */,
+				8EE83DE523FCD78E006D7EE2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
