@@ -61,8 +61,6 @@ class CommandParser {
             index += 1
         }
     }
-     
-    
 }
 
 // From here hackingwithswift.com/example-code/language/how-to-make-array-access-safer-using-a-custom-subscript

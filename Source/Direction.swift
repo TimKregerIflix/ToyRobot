@@ -22,7 +22,6 @@ enum Direction: String {
             return (0, -1)
         case .west:
             return (-1, 0)
-    
         }
     }
 
