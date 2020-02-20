@@ -26,7 +26,7 @@ class RobotTests: XCTestCase {
         let direction = Direction(rawValue: "NORTH")!
         let robot = Robot(board: board, direction: direction, position: (0, 0))
         
-        let position = robot.command(with: "MOVE")
+        let position = robot.command(with: Command(rawValue:"MOVE")!)
         
         XCTAssertTrue(position == (0, 1))
     }
@@ -36,7 +36,7 @@ class RobotTests: XCTestCase {
        let direction = Direction(rawValue: "EAST")!
        let robot = Robot(board: board, direction: direction, position: (0, 0))
        
-       let position = robot.command(with: "MOVE")
+       let position = robot.command(with: Command(rawValue:"MOVE")!)
        
        XCTAssertTrue(position == (1, 0))
     }
@@ -46,7 +46,7 @@ class RobotTests: XCTestCase {
         let direction = Direction(rawValue: "SOUTH")!
         let robot = Robot(board: board, direction: direction, position: (0, 4))
         
-        let position = robot.command(with: "MOVE")
+        let position = robot.command(with: Command(rawValue:"MOVE")!)
         
         XCTAssertTrue(position == (0, 3))
     }
@@ -56,7 +56,7 @@ class RobotTests: XCTestCase {
        let direction = Direction(rawValue: "WEST")!
        let robot = Robot(board: board, direction: direction, position: (4, 0))
 
-       let position = robot.command(with: "MOVE")
+       let position = robot.command(with: Command(rawValue:"MOVE")!)
 
        XCTAssertTrue(position == (3, 0))
     }
@@ -66,7 +66,7 @@ class RobotTests: XCTestCase {
            let direction = Direction(rawValue: "NORTH")!
            let robot = Robot(board: board, direction: direction, position: (0, 5))
            
-           let position = robot.command(with: "MOVE")
+           let position = robot.command(with:Command(rawValue: "MOVE")!)
            
            XCTAssertTrue(position == (0, 5))
     }
@@ -76,7 +76,7 @@ class RobotTests: XCTestCase {
         let direction = Direction(rawValue: "EAST")!
         let robot = Robot(board: board, direction: direction, position: (5, 0))
        
-        let position = robot.command(with: "MOVE")
+        let position = robot.command(with: Command(rawValue:"MOVE")!)
         XCTAssertTrue(position == (5, 0))
     }
 
@@ -85,7 +85,7 @@ class RobotTests: XCTestCase {
         let direction = Direction(rawValue: "SOUTH")!
         let robot = Robot(board: board, direction: direction, position: (0, 0))
        
-        let position = robot.command(with: "MOVE")
+        let position = robot.command(with: Command(rawValue:"MOVE")!)
         XCTAssertTrue(position == (0, 0))
     }
 

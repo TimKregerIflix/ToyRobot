@@ -11,4 +11,13 @@ struct Board {
     let ymin: Int
     let xmax: Int
     let ymax: Int
+    
+    func checkSafety(point: (Int, Int)) -> Bool {
+           switch point {
+           case (xmin...xmax, ymin...ymax):
+               return true
+           default:
+               return false
+           }
+       }
 }
