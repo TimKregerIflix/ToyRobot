@@ -18,6 +18,8 @@
 		8EE83DF523FCDC81006D7EE2 /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE83DE723FCD9B2006D7EE2 /* Direction.swift */; };
 		8EE83DF623FCDC81006D7EE2 /* Robot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE83DEB23FCDA3E006D7EE2 /* Robot.swift */; };
 		8EE83DF723FCDC81006D7EE2 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE83DEF23FCDA9F006D7EE2 /* Board.swift */; };
+		8EE83DF923FCFFB0006D7EE2 /* CommandParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE83DF823FCFFB0006D7EE2 /* CommandParser.swift */; };
+		8EE83DFA23FD0115006D7EE2 /* CommandParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE83DF823FCFFB0006D7EE2 /* CommandParser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -44,6 +46,7 @@
 		8EE83DED23FCDA53006D7EE2 /* RobotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RobotTests.swift; sourceTree = "<group>"; };
 		8EE83DEF23FCDA9F006D7EE2 /* Board.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
 		8EE83DF123FCDAB5006D7EE2 /* BoardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardTests.swift; sourceTree = "<group>"; };
+		8EE83DF823FCFFB0006D7EE2 /* CommandParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandParser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +112,7 @@
 				8EE83DE723FCD9B2006D7EE2 /* Direction.swift */,
 				8EE83DEB23FCDA3E006D7EE2 /* Robot.swift */,
 				8EE83DEF23FCDA9F006D7EE2 /* Board.swift */,
+				8EE83DF823FCFFB0006D7EE2 /* CommandParser.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -203,6 +207,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8EE83DBB23FCCF94006D7EE2 /* main.swift in Sources */,
+				8EE83DFA23FD0115006D7EE2 /* CommandParser.swift in Sources */,
 				8EE83DEC23FCDA3E006D7EE2 /* Robot.swift in Sources */,
 				8EE83DF023FCDA9F006D7EE2 /* Board.swift in Sources */,
 				8EE83DE823FCD9B2006D7EE2 /* Direction.swift in Sources */,
@@ -215,6 +220,7 @@
 			files = (
 				8EE83DE123FCD78E006D7EE2 /* ToyRobotTests.swift in Sources */,
 				8EE83DEE23FCDA53006D7EE2 /* RobotTests.swift in Sources */,
+				8EE83DF923FCFFB0006D7EE2 /* CommandParser.swift in Sources */,
 				8EE83DF223FCDAB5006D7EE2 /* BoardTests.swift in Sources */,
 				8EE83DF523FCDC81006D7EE2 /* Direction.swift in Sources */,
 				8EE83DF723FCDC81006D7EE2 /* Board.swift in Sources */,
