@@ -7,7 +7,7 @@
 //
 
 import XCTest
-import ToyRobot
+@testable import ToyRobot
 
 class DirectionTests: XCTestCase {
     func test_initializer_with_valid_value() {

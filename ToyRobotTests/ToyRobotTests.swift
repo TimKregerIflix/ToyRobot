@@ -7,7 +7,7 @@
 //
 
 import XCTest
-import ToyRobot
+@testable import ToyRobot
 
 class ToyRobotTests: XCTestCase {
     
