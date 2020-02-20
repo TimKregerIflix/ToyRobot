@@ -11,7 +11,6 @@ import Foundation
 let argCount = CommandLine.argc
 if argCount > 1 {
     let argument = CommandLine.arguments[1]
-    print("Hello, World! - \(argument)")
     let board = Board(xmin: 0, ymin: 0, xmax: 5, ymax: 5)
     let parser = CommandParser(with: board)
     let robot = Robot(board: board)
