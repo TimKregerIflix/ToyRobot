@@ -19,5 +19,5 @@ struct Board {
            default:
                return false
            }
-       }
+    }
 }
