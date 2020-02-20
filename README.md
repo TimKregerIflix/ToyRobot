@@ -1,5 +1,6 @@
 # ToyRobot
-This the coding challengefor explore. 
+This the coding challenge for MyXplor
+. 
 There is a test suite as well as a command line binary.
 Checkout the code and run the tests and binary. There are no external dependencies. The Package manifest is just there to assist the GitHub CI actions run when code is pushed.
 
