@@ -7,7 +7,7 @@
 //
 
 import XCTest
-import ToyRobot
+@testable import ToyRobot
 
 class BoardTests: XCTestCase {
     // Just going to short cut this and do all test in one
