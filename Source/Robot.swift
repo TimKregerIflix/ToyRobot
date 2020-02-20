@@ -5,6 +5,7 @@
 //  Created by Tim Kreger on 19/2/20.
 //  Copyright © 2020 audioreactive. All rights reserved.
 //
+
 enum Command: String {
     case move = "MOVE"
     case left = "LEFT"
@@ -17,25 +18,22 @@ class Robot {
     internal var direction: Direction
     internal var position: (Int, Int)
 
-    init(board: Board, direction: Direction, position: (Int, Int)) {
+    init(board: Board, direction: Direction = Direction.east, position: (Int, Int) = (5000, 5000)) {
         self.board = board
         self.direction = direction
         self.position = position
     }
 
-    func command(with command: Command) -> (Int, Int) {
+    func command(with command: Command) {
         switch command {
         case .move:
             position = move(forward: direction, from: position)
-            return position
         case .left:
             direction = direction.rotateLeft(current: direction)
-            return position
         case .right:
             direction = direction.rotateRight(current: direction)
-            return position
         case .report:
-            return position
+            print("Output: \(position.0),\(position.1),\(direction.rawValue)")
         }
     }
 

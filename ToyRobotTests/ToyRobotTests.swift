@@ -17,12 +17,12 @@ class ToyRobotTests: XCTestCase {
     override func setUp() {
         board = Board(xmin: 0, ymin: 0, xmax: 5, ymax: 5)
         parser = CommandParser(with: board)
-        robot = Robot(board: board, direction: Direction(rawValue: "NORTH")!, position: (-5, -5))
+        robot = Robot(board: board)
     }
-    
+
     // a) PLACE 0,0, NORTH MOVE REPORT Output: 0,1,NORTH
     func test_acceptance1() {
-        let commandString = "PLACE 0,0, NORTH MOVE REPORT"
+        let commandString = "PLACE 0,0,NORTH MOVE REPORT"
         parser.parse(string: commandString)
         parser.executeSequence(with: robot)
 
@@ -33,7 +33,7 @@ class ToyRobotTests: XCTestCase {
 
     // b) PLACE 0,0, NORTH LEFT REPORT Output: 0,0,WEST
     func test_acceptance2() {
-        let commandString = "PLACE 0,0, NORTH LEFT REPORT"
+        let commandString = "PLACE 0,0,NORTH LEFT REPORT"
         parser.parse(string: commandString)
         parser.executeSequence(with: robot)
 
@@ -43,12 +43,21 @@ class ToyRobotTests: XCTestCase {
 
     // c) PLACE 1,2, EAST MOVE MOVE LEFT MOVE REPORT Output: 3,3,NORTH
     func test_acceptance3() {
-        let commandString = "PLACE 1,2, EAST MOVE MOVE LEFT MOVE REPORT"
+        let commandString = "PLACE 1,2,EAST MOVE MOVE LEFT MOVE REPORT"
         parser.parse(string: commandString)
         parser.executeSequence(with: robot)
 
         XCTAssertTrue(robot.position == (3, 3))
         XCTAssert(robot.direction == .north)
+    }
+    
+    func test_place() {
+        let commandString = "PLACE 1,2,EAST MOVE MOVE LEFT MOVE REPORT PLACE 4,4,SOUTH REPORT"
+        parser.parse(string: commandString)
+        parser.executeSequence(with: robot)
+
+        XCTAssertTrue(robot.position == (4, 4))
+        XCTAssert(robot.direction == .south)
     }
 
 }

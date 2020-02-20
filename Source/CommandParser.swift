@@ -5,6 +5,7 @@
 //  Created by Tim Kreger on 19/2/20.
 //  Copyright © 2020 audioreactive. All rights reserved.
 //
+import Foundation
 
 class CommandParser {
     internal var string = ""
@@ -22,12 +23,13 @@ class CommandParser {
         commands.append(contentsOf: rawCommands[firstPlace..<rawCommands.count])
     }
 
-    func getPlacePosition(from string: String) -> (Int, Int)? {
-        let coords = commands[1].components(separatedBy: ",")
+    func getPlacePosition(from string: String) -> (Int, Int, String)? {
+        let coords = string.components(separatedBy: ",")
         if coords.count == 3 {
             let x = Int(coords[0]) ?? 0
             let y = Int(coords[1]) ?? 0
-            let position = (x, y)
+            let direction = coords[safeIndex: 2] ?? "EAST"
+            let position = (x, y, direction)
             return position
         }
 
@@ -39,26 +41,22 @@ class CommandParser {
         while index < commands.count {
             let commandString = commands[index]
             if let command = Command(rawValue: commandString) {
-                let position = robot.command(with: command)
-                print(" Loc = \(position)")
+                robot.command(with: command)
             }
 
             if commandString == "PLACE" {
                 index += 1
                 guard
                     let command = commands[safeIndex: index],
-                    let position = getPlacePosition(from: command)
+                    let location = getPlacePosition(from: command)
                 else {
                     // Invalid PLACE contruct should probably error out
                     continue
                 }
-                index += 1
-                if  let direction = commands[safeIndex: index] {
-                    robot.place(position: position, direction: direction)
-                } else {
-                    // Invalid PLACE contruct should probably error out
-                    continue
-                }
+
+                let position = (location.0, location.1)
+                let direction = location.2
+                robot.place(position: position, direction: direction)
             }
             index += 1
         }
